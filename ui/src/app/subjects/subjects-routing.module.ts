@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { ListComponent } from './list/list.component';
 import { ViewComponent } from './view/view.component';
 
-
 const routes: Routes = [{
   path: '',
   component: ListComponent
