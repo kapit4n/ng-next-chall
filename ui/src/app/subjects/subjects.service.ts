@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 
-interface Subject {
+export interface Subject {
   id: number;
   name: string;
   catId: number;

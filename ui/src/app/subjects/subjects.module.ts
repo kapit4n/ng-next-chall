@@ -6,6 +6,7 @@ import { SubjectsRoutingModule } from './subjects-routing.module';
 import { ListComponent } from './list/list.component';
 import { ViewComponent } from './view/view.component';
 
+import { SubjectsService } from './subjects.service'
 
 @NgModule({
   declarations: [ListComponent, ViewComponent],
@@ -13,6 +14,7 @@ import { ViewComponent } from './view/view.component';
     CommonModule,
     SubjectsRoutingModule,
     HttpClientModule
-  ]
+  ],
+  providers: [SubjectsService]
 })
 export class SubjectsModule { }
