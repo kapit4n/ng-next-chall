@@ -8,11 +8,14 @@ import { SubjectsService } from '../subjects.service'
 })
 export class ListComponent implements OnInit {
 
+  data = [];
+
   constructor(private subjectsSvc: SubjectsService) { }
 
   ngOnInit() {
     this.subjectsSvc.getSubjects().subscribe(subjects => {
       console.log(subjects);
+      this.data = subjects;
     });
   }
 
