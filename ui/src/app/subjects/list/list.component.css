@@ -1,11 +1,12 @@
 .card-container {
+  width: 1024px;
+  align-items: center;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .card {
-  width: 300px;
-  height: 150x;
   background-color: aliceblue;
 }
 

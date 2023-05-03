@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

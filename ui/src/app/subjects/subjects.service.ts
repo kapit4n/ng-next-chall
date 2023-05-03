@@ -15,7 +15,7 @@ export class SubjectsService {
   apiURL: string = 'http://localhost:8080/subjects'
 
   constructor(private client: HttpClient) {
-
+      
   }
 
   getSubjects() {
