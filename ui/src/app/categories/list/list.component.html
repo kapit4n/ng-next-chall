@@ -1,0 +1,16 @@
+<div class="categories-cards">
+  <mat-card *ngFor="let category of data">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>
+          {{category.name}}
+        </mat-card-title>
+        <mat-card-subtitle>Subtitle</mat-card-subtitle>
+        <img mat-card-sm-image src="{{category.image}}" />
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      Category Name
+    </mat-card-content>
+  </mat-card>
+</div>

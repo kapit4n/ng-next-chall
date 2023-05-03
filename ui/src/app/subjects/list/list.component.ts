@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { SubjectsService } from '../subjects.service'
 
@@ -14,7 +15,6 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.subjectsSvc.getSubjects().subscribe(subjects => {
-      console.log(subjects);
       this.data = subjects;
     });
   }
