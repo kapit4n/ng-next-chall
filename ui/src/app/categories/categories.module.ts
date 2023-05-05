@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 import { CategoriesRoutingModule } from './categories-routing.module';
 import { ListComponent } from './list/list.component';
-import { MatCardModule } from '@angular/material/card'
 import { CategoriesService } from './categories.service';
+import { ComponentsModule } from '../components/components.module'
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { CategoriesService } from './categories.service';
   imports: [
     CommonModule,
     CategoriesRoutingModule,
-    MatCardModule,
+    ComponentsModule
   ],
   providers: [CategoriesService]
 })

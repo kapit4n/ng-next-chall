@@ -1,0 +1,50 @@
+.cards-container {
+  width: 1024px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.card {
+  background-color: aliceblue;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .card {
+    margin: 0 1rem;
+  }
+}
+
+.card .header {
+  height: 30px;
+  background-color: aliceblue;
+  text-transform: uppercase;
+  padding-top: 10px;
+  text-align: center;
+  border-bottom: 1px solid #9fbbd1;
+  font-size: 15px;
+}
+
+.card .body {
+  background-color: aliceblue;
+  padding: 1rem;
+}
+
+.app-list {
+  background-color: blue;
+  width: 100%;
+  display: none;
+}
+
+.image {
+  width: 100px;
+}
