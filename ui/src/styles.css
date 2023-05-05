@@ -2,3 +2,18 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.title-text {
+  color: rgb(32, 29, 29);
+  font-weight: 900;
+}
+
+.secondary-text {
+  color: rgb(80, 71, 71);
+  font-weight: 400;
+}
+
+.date-text {
+  color: rgb(49, 59, 77);
+  font-weight: 400;
+}

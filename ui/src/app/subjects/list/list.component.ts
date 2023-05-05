@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { SubjectsService } from '../subjects.service'
 import CardData from '../../data/card.interface'
 import Transformers from '../../utils/transformers'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -13,7 +14,7 @@ export class ListComponent implements OnInit {
 
   data: CardData[] = [];
 
-  constructor(private subjectsSvc: SubjectsService) { }
+  constructor(private subjectsSvc: SubjectsService, private router: Router) { }
 
   ngOnInit() {
     this.subjectsSvc.getSubjects().subscribe(subjects => {
@@ -21,4 +22,7 @@ export class ListComponent implements OnInit {
     });
   }
 
+  onRedirect(subject: CardData) {
+    this.router.navigate([`subjects/${subject.id}`])
+  }
 }

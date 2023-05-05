@@ -1,3 +1,7 @@
 <div class="cards-container">
-  <app-card *ngFor="let d of data" [data]="d"/>
+  <app-card *ngFor="let d of data" [data]="d">
+    <div class="actions">
+      <button (click)="onRedirect(d)">GO</button>
+    </div>
+  </app-card>
 </div>
