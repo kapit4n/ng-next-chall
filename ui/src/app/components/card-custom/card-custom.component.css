@@ -14,9 +14,8 @@
 }
 
 .card {
-  background-color: aliceblue;
+  border-radius: 2rem;
 }
-
 
 @media only screen and (max-width: 768px) {
   .card {
@@ -26,25 +25,19 @@
 
 .card .header {
   height: 30px;
-  background-color: aliceblue;
   text-transform: uppercase;
   padding-top: 10px;
   text-align: center;
-  border-bottom: 1px solid #9fbbd1;
+  border-bottom: 1px solid #b8d2e6;
   font-size: 15px;
 }
 
 .card .body {
-  background-color: aliceblue;
   padding: 1rem;
 }
 
-.app-list {
-  background-color: blue;
-  width: 100%;
-  display: none;
-}
 
 .image {
   width: 100px;
+  border-radius: 1rem;
 }
