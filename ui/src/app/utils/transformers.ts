@@ -4,11 +4,10 @@ import Subject from "../data/subject.interface";
 
 export default class Transformers {
   static transformCategoryToCardData(category: Category): CardData {
-    return ({ header: category.name, body: category.description, image: category.image })
+    return ({ id: category.id, header: category.name, body: category.description, image: category.image })
   }
 
-  
-  static transformSubjectToCardData(category: Subject): CardData {
-    return ({ header: category.name, body: category.description, image: category.image })
+  static transformSubjectToCardData(subject: Subject): CardData {
+    return ({ id: subject.id, header: subject.name, body: subject.description, image: subject.image })
   }
 }

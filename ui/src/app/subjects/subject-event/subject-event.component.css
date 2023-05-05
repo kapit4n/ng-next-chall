@@ -1,0 +1,5 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(115, 115, 126);
+}

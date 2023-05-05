@@ -1,1 +1,10 @@
-<p>view works!</p>
+<app-card [data]="data">
+  <div class="actions">
+    <button>EDIT</button>
+  </div>
+  <div class="details">
+    <div *ngFor="let ev of subjectEvents">
+      <app-subject-event [data]="ev" />
+    </div>
+  </div>
+</app-card>
