@@ -1,9 +1,6 @@
 import { Component, Input } from '@angular/core';
-interface CardData {
-  header: string;
-  body: string;
-  image: string;
-}
+import CardData from '../../data/card.interface'
+
 
 @Component({
   selector: 'app-card-custom',

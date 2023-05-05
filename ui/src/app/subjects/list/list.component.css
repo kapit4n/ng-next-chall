@@ -1,4 +1,4 @@
-.card-container {
+.cards-container {
   width: 1024px;
   align-items: center;
   display: grid;
@@ -6,20 +6,9 @@
   gap: 1rem;
 }
 
-.card {
-  background-color: aliceblue;
-}
-
-.card .header {
-  height: 30px;
-  background-color: aqua;
-  text-transform: uppercase;
-  padding-top: 10px;
-  text-align: center;
-}
-
-.card .body {
-  height: 100px;
-  background-color: antiquewhite;
-  padding: 2px 5px;
+@media only screen and (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }

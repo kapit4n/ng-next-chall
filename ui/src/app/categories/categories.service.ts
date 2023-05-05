@@ -1,12 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import Category from '../data/category.interface';
 
-export interface Category {
-  id: number;
-  name: string;
-  description: string;
-  image: string;
-} 
 
 @Injectable({
   providedIn: 'root'

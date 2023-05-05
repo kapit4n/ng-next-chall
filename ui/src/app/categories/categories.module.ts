@@ -7,7 +7,6 @@ import { ListComponent } from './list/list.component';
 import { CategoriesService } from './categories.service';
 import { ComponentsModule } from '../components/components.module'
 
-
 @NgModule({
   declarations: [
     ListComponent

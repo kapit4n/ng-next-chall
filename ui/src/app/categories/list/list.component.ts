@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CategoriesService, Category } from '../categories.service';
-
-interface CardData {
-  header: string;
-  body: string;
-  image: string;
-}
+import { CategoriesService } from '../categories.service';
+import CardData from '../../data/card.interface'
+import Transformers from '../../utils/transformers'
 
 @Component({
   selector: 'app-list',
@@ -21,7 +17,7 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.catService.getAllCategories().subscribe(cats => {
-      this.data = cats.map(c => ({ header: c.name, body: c.description, image: c.image }));
+      this.data = cats.map(c => Transformers.transformCategoryToCardData(c));
     })
   }
 }

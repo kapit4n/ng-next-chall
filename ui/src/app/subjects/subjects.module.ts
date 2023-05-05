@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SubjectsRoutingModule } from './subjects-routing.module';
 import { ListComponent } from './list/list.component';
 import { ViewComponent } from './view/view.component';
+import { ComponentsModule } from '../components/components.module'
 
 import { SubjectsService } from './subjects.service'
 
@@ -11,7 +12,8 @@ import { SubjectsService } from './subjects.service'
   declarations: [ListComponent, ViewComponent],
   imports: [
     CommonModule,
-    SubjectsRoutingModule
+    SubjectsRoutingModule,
+    ComponentsModule
   ],
   providers: [SubjectsService]
 })

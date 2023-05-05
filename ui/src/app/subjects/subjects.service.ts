@@ -1,12 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-
-export interface Subject {
-  id: number;
-  name: string;
-  catId: number;
-}
+import Subject from '../data/subject.interface';
 
 @Injectable({
   providedIn: 'root'
