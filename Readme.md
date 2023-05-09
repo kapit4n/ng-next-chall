@@ -5,6 +5,9 @@ to research, this is for people that enjoy to research
 frequently news stuffs and does not have the clear
 way to choose the bunch of topics that is on their mind.
 
+![Home](https://raw.githubusercontent.com/kapit4n/ng-next-chall/master/mockups/ng-next-chall-subjects.png)
+
+
 # server
 
 - start (go run main.go)
