@@ -5,6 +5,7 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"github.com/kapit4n/ng-next-chall/api/pkg/categories"
 	"github.com/kapit4n/ng-next-chall/api/pkg/common/db"
 	"github.com/kapit4n/ng-next-chall/api/pkg/subjects"
 	"github.com/spf13/viper"
@@ -31,6 +32,7 @@ func main() {
 	}))
 
 	subjects.RegisterRoutes(r, h)
+	categories.RegisterRoutes(r, h)
 	r.Run(port)
 
 }

@@ -17,6 +17,7 @@ func Init(url string) *gorm.DB {
 
 	// have a flag to just migrate when it is required
 	db.AutoMigrate(&models.Subject{})
+	db.AutoMigrate(&models.Category{})
 
 	return db
 }
