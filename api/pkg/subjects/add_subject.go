@@ -8,7 +8,10 @@ import (
 )
 
 type AddSubjectRequestBody struct {
-	Name string `json:"name"`
+	Name        string `json:"name"`
+	Image       string `json:"image"`
+	Description string `json:"description"`
+	CategoryId  int    `json:"catId"`
 }
 
 func (h handler) AddSubject(c *gin.Context) {
@@ -22,6 +25,9 @@ func (h handler) AddSubject(c *gin.Context) {
 	var subject models.Subject
 
 	subject.Name = body.Name
+	subject.Image = body.Image
+	subject.Description = body.Description
+	subject.CategoryId = body.CategoryId
 
 	if result := h.DB.Create(&subject); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)

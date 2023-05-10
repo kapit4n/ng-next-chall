@@ -9,4 +9,3 @@ type Subject struct {
 	Description string `json:"description"`
 	CategoryId  int    `json:"catId"`
 }
-
