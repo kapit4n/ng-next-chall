@@ -7,7 +7,8 @@ import Category from '../data/category.interface';
   providedIn: 'root'
 })
 export class CategoriesService {
-  apiURL: string = 'http://localhost:8080/categories'
+  // move api url to config
+  apiURL: string = 'http://localhost:8080/categories/'
 
   getAllCategories() {
     return this.client.get<Category[]>(this.apiURL)  
@@ -16,6 +17,5 @@ export class CategoriesService {
   constructor(private client: HttpClient) {
     
   }
-
 
 }

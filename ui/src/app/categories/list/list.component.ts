@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CategoriesService } from '../categories.service';
 import CardData from '../../data/card.interface'
 import Transformers from '../../utils/transformers'
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-list',
@@ -11,6 +12,8 @@ import Transformers from '../../utils/transformers'
 export class ListComponent implements OnInit {
 
   data: CardData[] = [];
+  dataSubscription: Subscription;
+  
   constructor(private catService: CategoriesService) {
 
   }
@@ -19,5 +22,9 @@ export class ListComponent implements OnInit {
     this.catService.getAllCategories().subscribe(cats => {
       this.data = cats.map(c => Transformers.transformCategoryToCardData(c));
     })
+  }
+
+  ngOnDestroy() {
+    this.dataSubscription ? this.dataSubscription.unsubscribe() : true;
   }
 }

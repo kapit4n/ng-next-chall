@@ -6,13 +6,19 @@ import Subject from '../data/subject.interface';
   providedIn: 'root'
 })
 export class SubjectsService {
-  apiURL: string = 'http://localhost:8080/subjects/'
+  apiURL: string = 'http://localhost:8080/subjects'
 
   constructor(private client: HttpClient) {
       
   }
 
   getSubjects() {
-    return this.client.get<Subject[]>(this.apiURL);
+    return this.client.get<Subject[]>(`${this.apiURL}/`);
   }
+  
+
+  getSubjectById(id: number) {
+    return this.client.get<Subject>(`${this.apiURL}/${id}`);
+  }
+
 }

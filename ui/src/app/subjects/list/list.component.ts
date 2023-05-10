@@ -1,9 +1,9 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { SubjectsService } from '../subjects.service'
 import CardData from '../../data/card.interface'
 import Transformers from '../../utils/transformers'
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-list',
@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 export class ListComponent implements OnInit {
 
   data: CardData[] = [];
+  dataSubscription: Subscription;
 
   constructor(private subjectsSvc: SubjectsService, private router: Router) { }
 
@@ -24,5 +25,9 @@ export class ListComponent implements OnInit {
 
   onRedirect(subject: CardData) {
     this.router.navigate([`subjects/${subject.id}`])
+  }
+
+  ngOnDestroy() {
+    this.dataSubscription ? this.dataSubscription.unsubscribe() : true;
   }
 }

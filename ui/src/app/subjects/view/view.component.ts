@@ -4,6 +4,7 @@ import SubjectEvent from 'src/app/data/subject-event.interface';
 import Transformers from 'src/app/utils/transformers';
 import { SubjectsService } from '../subjects.service';
 import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-view',
   templateUrl: './view.component.html',
@@ -13,8 +14,8 @@ export class ViewComponent implements OnInit {
 
   data: CardData = {} as CardData;
   subjectEvents: SubjectEvent[];
-  private subRouter: any;
-  private subSubjects: any;
+  private subRouter: Subscription;
+  private subSubjects: Subscription;
   id: number;
 
   constructor(private subjectsSvc: SubjectsService, private route: ActivatedRoute) {
@@ -40,9 +41,7 @@ export class ViewComponent implements OnInit {
 
     this.subRouter = this.route.params.subscribe(params => {
       this.id = +params['id'];
-      // move this to getById when it is implemented
-      this.subSubjects = this.subjectsSvc.getSubjects().subscribe(subjects => {
-        const subject = subjects.find(s => s.id === this.id);
+      this.subSubjects = this.subjectsSvc.getSubjectById(this.id).subscribe(subject => {
         this.data = Transformers.transformSubjectToCardData(subject);
       });
     });
@@ -51,7 +50,7 @@ export class ViewComponent implements OnInit {
   }
 
   ngDestroy() {
-    this.subRouter.unsubscribe();
-    this.subSubjects.unsubscribe();
+    this.subRouter?.unsubscribe();
+    this.subSubjects?.unsubscribe();
   }
 }
