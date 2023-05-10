@@ -29,7 +29,7 @@ func (h handler) UpdateSubject(c *gin.Context) {
 
 	subject.Name = body.Name
 
-	db.DB.Save(&subject)
+	h.DB.Save(&subject)
 
 	c.JSON(http.StatusOK, &subject)
 }

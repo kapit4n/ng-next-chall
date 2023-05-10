@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/kapit4n/ng-next-chall/api/pkg/common/db"
+	"github.com/kapit4n/ng-next-chall/api/pkg/subjects"
 	"github.com/spf13/viper"
 )
 
@@ -15,12 +16,8 @@ func main() {
 	dbUrl := viper.Get("DB_URL").(string)
 
 	r := gin.Default()
-	db.Init(dbUrl)
+	h := db.Init(dbUrl)
 
-	r.GET("/", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"port":  port,
-			"dbUrl": dbUrl,
-		})
-	})
+	subjects.RegisterRoutes(r, h)
+	r.Run(port)
 }

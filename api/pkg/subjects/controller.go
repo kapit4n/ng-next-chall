@@ -9,7 +9,7 @@ type handler struct {
 	DB *gorm.DB
 }
 
-func RegisterRouters(r *gin.Engine, db *gorm.DB) {
+func RegisterRoutes(r *gin.Engine, db *gorm.DB) {
 
 	h := &handler{
 		DB: db,
