@@ -8,6 +8,6 @@ export default class Transformers {
   }
 
   static transformSubjectToCardData(subject: Subject): CardData {
-    return ({ id: subject.id, header: subject.name, body: subject.description, image: subject.image })
+    return ({ id: subject.ID, header: subject.name, body: subject.description, image: subject.image })
   }
 }
