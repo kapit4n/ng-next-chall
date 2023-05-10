@@ -6,7 +6,7 @@ import Subject from '../data/subject.interface';
   providedIn: 'root'
 })
 export class SubjectsService {
-  apiURL: string = 'http://localhost:8080/subjects'
+  apiURL: string = 'http://localhost:8080/subjects/'
 
   constructor(private client: HttpClient) {
       
