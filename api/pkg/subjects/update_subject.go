@@ -1,4 +1,4 @@
-package models
+package subjects
 
 import (
 	"net/http"
