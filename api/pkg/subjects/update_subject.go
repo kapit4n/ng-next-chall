@@ -8,7 +8,10 @@ import (
 )
 
 type UpdateSubjectRequestBody struct {
-	Name string `json:"name"`
+	Name        string `json:"name"`
+	Image       string `json:"image"`
+	Description string `json:"description"`
+	CategoryId  int    `json:"catId"`
 }
 
 func (h handler) UpdateSubject(c *gin.Context) {
@@ -28,6 +31,9 @@ func (h handler) UpdateSubject(c *gin.Context) {
 	}
 
 	subject.Name = body.Name
+	subject.Image = body.Image
+	subject.Description = body.Description
+	subject.CategoryId = body.CategoryId
 
 	h.DB.Save(&subject)
 
