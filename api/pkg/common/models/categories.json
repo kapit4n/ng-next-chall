@@ -1,0 +1,47 @@
+[
+    {
+        "ID": 1,
+        "CreatedAt": "2023-05-10T10:56:35.88-04:00",
+        "UpdatedAt": "2023-05-10T10:56:35.88-04:00",
+        "DeletedAt": null,
+        "name": "UI Framewoks",
+        "description": "Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website",
+        "image": "https://www.interviewbit.com/blog/wp-content/uploads/2022/05/image1.png"
+    },
+    {
+        "ID": 2,
+        "CreatedAt": "2023-05-10T15:57:50.187-04:00",
+        "UpdatedAt": "2023-05-10T15:57:50.187-04:00",
+        "DeletedAt": null,
+        "name": "Front-end Programming language",
+        "description": "A Front-End Developer is someone who creates websites and web applications. The difference between Front-End and Back-End is that Front-End refers to how a web page looks, while back-end refers to how it works. You can think of Front-End as client-side and Back-End as server-side.",
+        "image": "https://diceus.com/wp-content/uploads/2019/09/12345.png"
+    },
+    {
+        "ID": 3,
+        "CreatedAt": "2023-05-10T15:58:28.856-04:00",
+        "UpdatedAt": "2023-05-10T15:58:28.856-04:00",
+        "DeletedAt": null,
+        "name": "Backend frameworks",
+        "description": "A backend is a corporate system that is used to run a website or company, such as order management systems, inventory and supply processing. This system collects information from users or other data processing systems in the company.",
+        "image": "https://i.ytimg.com/vi/9z_2wmJOom4/maxresdefault.jpg"
+    },
+    {
+        "ID": 4,
+        "CreatedAt": "2023-05-10T15:59:04.346-04:00",
+        "UpdatedAt": "2023-05-10T15:59:04.346-04:00",
+        "DeletedAt": null,
+        "name": "Backend Programming language",
+        "description": "A backend is a corporate system that is used to run a website or company, such as order management systems, inventory and supply processing. This system collects information from users or other data processing systems in the company.",
+        "image": "https://i.ytimg.com/vi/9z_2wmJOom4/maxresdefault.jpg"
+    },
+    {
+        "ID": 5,
+        "CreatedAt": "2023-05-10T15:59:42.659-04:00",
+        "UpdatedAt": "2023-05-10T15:59:42.659-04:00",
+        "DeletedAt": null,
+        "name": "Styling frameworks",
+        "description": "A style is a set of formatting characteristics that are defined in a cascading style sheet (CSS) and define how to display HTML elements. You can apply styles to content in a web page, including text (individual characters or entire paragraphs), graphics, layers, tables, and even to the body of the entire web page.",
+        "image": "https://www.atatus.com/blog/content/images/size/w960/2022/09/best-css-frameworks--1-.png"
+    }
+]

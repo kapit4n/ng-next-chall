@@ -1,0 +1,62 @@
+[
+  {
+    "ID": 1,
+    "CreatedAt": "2023-05-10T09:30:45.031-04:00",
+    "UpdatedAt": "2023-05-10T09:30:45.031-04:00",
+    "DeletedAt": null,
+    "name": "Golang",
+    "image": "https://www.iconbolt.com/preview/facebook/elastic-ui-logos/golang.svg",
+    "description": "Go is a statically typed, compiled high-level programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. It is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.",
+    "catId": 0
+  },
+  {
+    "ID": 2,
+    "CreatedAt": "2023-05-10T09:33:19.19-04:00",
+    "UpdatedAt": "2023-05-10T09:33:19.19-04:00",
+    "DeletedAt": null,
+    "name": "React js",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    "description": "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.",
+    "catId": 1
+  },
+  {
+    "ID": 3,
+    "CreatedAt": "2023-05-10T15:54:13.748-04:00",
+    "UpdatedAt": "2023-05-10T15:54:13.748-04:00",
+    "DeletedAt": null,
+    "name": "Angular",
+    "image": "https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/1131364/angular-5-tutorial-325403e130ba3b2c367174b73bb7275a.png",
+    "description": "AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. ... In 2014, the original AngularJS team began working on the Angular web framework.",
+    "catId": 2
+  },
+  {
+    "ID": 4,
+    "CreatedAt": "2023-05-10T15:55:19.676-04:00",
+    "UpdatedAt": "2023-05-10T15:55:19.676-04:00",
+    "DeletedAt": null,
+    "name": "Vue Js",
+    "image": "https://miro.medium.com/v2/resize:fit:900/1*OrjCKmou1jT4It5so5gvOA.jpeg",
+    "description": "Vue.js (pronounced /vjuː/, like view) is a library for building interactive web interfaces. The goal of Vue.js is to provide the benefits of reactive data binding and composable view components with an API that is as simple as possible. Vue.js itself is not a full-blown framework - it is focused on the view layer only.",
+    "catId": 1
+  },
+  {
+    "ID": 5,
+    "CreatedAt": "2023-05-10T15:56:06.373-04:00",
+    "UpdatedAt": "2023-05-10T15:56:06.373-04:00",
+    "DeletedAt": null,
+    "name": "Python",
+    "image": "https://img-b.udemycdn.com/course/750x422/2722434_fd59_6.jpg",
+    "description": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation via the off-side rule. Python is dynamically typed and garbage-collected.",
+    "catId": 2
+  },
+  {
+    "ID": 6,
+    "CreatedAt": "2023-05-10T15:56:47.926-04:00",
+    "UpdatedAt": "2023-05-10T15:56:47.926-04:00",
+    "DeletedAt": null,
+    "name": "Ruby",
+    "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190902124355/ruby-programming-language.png",
+    "description": "Ruby is an interpreted, high-level, general-purpose programming language which supports multiple programming paradigms. It was designed with an emphasis on programming productivity and simplicity. In Ruby, everything is an object, including primitive data types.",
+    "catId": 2
+  }
+]
