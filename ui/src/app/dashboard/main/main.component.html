@@ -1,9 +1,18 @@
-<div>
-  <h1>Subject Events</h1>
-  <div class="counts">
-    <span>Subject Events</span>
+<div class="counts">
+  <div class="count-item">
+    <h3>Subjects:</h3>
+    <a href="/subjects">20</a>
   </div>
-  <div class="subject-events-list">
-    <app-subject-event *ngFor="let ev of subjectEvents" [data]="ev" />
+  <div class="count-item">
+    <h3>Categories:</h3>
+    <a href="/categories">6</a>
   </div>
+  <div class="count-item">
+    <h3>Subject Events:</h3>
+    <a href="/subject-events">200</a>
+  </div>
+</div>
+<h1>Subject Events</h1>
+<div class="subject-events-list">
+  <app-subject-event *ngFor="let ev of subjectEvents" [data]="ev" />
 </div>

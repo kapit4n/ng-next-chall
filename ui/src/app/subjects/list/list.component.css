@@ -12,7 +12,6 @@
 }
 
 .actions {
-  padding-bottom: 1rem;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -20,4 +19,5 @@
 
 :host {
   max-width: 1200px;
+  padding: 1rem;
 }

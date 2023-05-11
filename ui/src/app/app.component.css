@@ -4,7 +4,9 @@
   justify-content: center;
   width: 100%;
   gap: 1rem;
-  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid rgb(94, 94, 227);
 }
 
 .main-container {

@@ -27,6 +27,7 @@
 
 :host {
   max-width: 1200px;
+  padding: 1rem;
 }
 
 .subject-events-list {
