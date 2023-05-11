@@ -12,11 +12,9 @@ export class CardComponent {
   @Input()
   onRedirect: (id: number) => void;
 
-  hello = "Hello World"
-
-  redirectToShowInCard() {
+  redirectToShowInCard(id: number) {
     if (this.onRedirect) {
-      this.onRedirect(this.data.id)
+      this.onRedirect(id)
     }
   }
 }

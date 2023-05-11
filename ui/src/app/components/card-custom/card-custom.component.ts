@@ -15,7 +15,6 @@ export class CardCustomComponent {
 
   onClickImage() {
     this.redirectToShow.emit(this.data.id)
-    console.log("Emit redirect from card custom")
   }
   
 }

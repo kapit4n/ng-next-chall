@@ -21,4 +21,7 @@ export class SubjectsService {
     return this.client.get<Subject>(`${this.apiURL}/${id}`);
   }
 
+  create(subject: Subject) {
+    return this.client.post<Subject>(`${this.apiURL}/`, subject);
+  }
 }

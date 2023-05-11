@@ -18,6 +18,7 @@ export class ViewComponent implements OnInit {
   private subRouter: Subscription;
   private subSubjects: Subscription;
   private subSubjectEvents: Subscription;
+  private subDeleteSubjectEvent: Subscription;
 
   id: number;
   showAddEvent: boolean = false;
@@ -51,6 +52,12 @@ export class ViewComponent implements OnInit {
     this.toggleShowAddEvent()
   }
 
+  onDeleteSubjectEvent(subjectEvent: SubjectEvent){
+    this.subDeleteSubjectEvent = this.subjectEventsSvc.delete(subjectEvent.ID).subscribe(() => {
+      this.subjectEvents = this.subjectEvents.filter(sev => sev.ID !== subjectEvent.ID)
+    })
+  }
+
   ngOnInit() {
     this.subRouter = this.route.params.subscribe(params => {
       this.id = +params['id'];
@@ -67,5 +74,6 @@ export class ViewComponent implements OnInit {
     this.subRouter?.unsubscribe();
     this.subSubjects?.unsubscribe();
     this.subSubjectEvents?.unsubscribe();
+    this.subDeleteSubjectEvent?.unsubscribe();
   }
 }

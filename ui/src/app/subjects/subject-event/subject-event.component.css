@@ -1,5 +1,14 @@
 :host {
+  background-color: #d1d7e0;
+  border-bottom: 1px solid rgb(115, 115, 126);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgb(115, 115, 126);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
 }

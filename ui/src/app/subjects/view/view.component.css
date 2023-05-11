@@ -26,5 +26,11 @@
 }
 
 :host {
-  max-width: 1400px;
+  max-width: 1200px;
+}
+
+.subject-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

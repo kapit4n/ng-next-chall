@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import SubjectEvent from 'src/app/data/subject-event.interface';
 
 @Component({
@@ -8,4 +8,12 @@ import SubjectEvent from 'src/app/data/subject-event.interface';
 })
 export class SubjectEventComponent {
   @Input('data') data: SubjectEvent;
+
+  @Output() 
+  onDelete = new EventEmitter<number>();
+
+  onDeleteAction() {
+    this.onDelete.emit(this.data.ID)
+  }
+
 }

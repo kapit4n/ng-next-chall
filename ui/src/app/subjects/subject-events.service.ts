@@ -27,4 +27,11 @@ export class SubjectEventsService {
     return this.client.post<SubjectEvent>(`${this.apiURL}/`, subjectEvent);
   }
 
+  update(id: number, subjectEvent: SubjectEvent) {
+    return this.client.put<SubjectEvent>(`${this.apiURL}/${id}`, subjectEvent);
+  }
+
+  delete(id: number) {
+    return this.client.delete<SubjectEvent>(`${this.apiURL}/${id}`);
+  }
 }

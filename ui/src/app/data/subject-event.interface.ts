@@ -1,5 +1,5 @@
 export default interface SubjectEvent {
-  id?: number;
+  ID?: number;
   subjectId: number;
   title: string;
   description: string;
