@@ -3,6 +3,21 @@
     <button>EDIT</button>
   </div>
   <div class="details">
+    <div>
+      <button *ngIf="!showAddEvent" (click)="toggleShowAddEvent()">Add Event</button>
+    </div>
+    <div class="add-event" *ngIf="showAddEvent">
+      <div class="add-event-description">
+        <label for="event-description">Event</label>
+        <textarea class="event-description" (keyup)="onKey($event)">
+        </textarea>
+      </div>
+
+      <div class="add-event-actions">
+        <button (click)="toggleShowAddEvent()">Cancel</button>
+        <button (click)="onSave()">Save</button>
+      </div>
+    </div>
     <div *ngFor="let ev of subjectEvents">
       <app-subject-event [data]="ev" />
     </div>

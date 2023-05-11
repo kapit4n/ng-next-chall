@@ -1,7 +1,7 @@
 export default interface SubjectEvent {
-  id: number;
+  id?: number;
   subjectId: number;
   title: string;
   description: string;
-  createdAt: Date;
+  CreatedAt?: Date;
 }
