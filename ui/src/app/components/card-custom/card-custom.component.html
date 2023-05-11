@@ -3,7 +3,7 @@
     {{ data.header }}
   </div>
   <div class="body">
-    <img class="image" [src]="data.image" />
+    <img class="image" [src]="data.image" (click)="onClickImage()"/>
     <p class="secondary-text">
       {{ data.body }}
     </p>

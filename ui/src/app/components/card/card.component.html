@@ -1,4 +1,4 @@
-<app-card-custom [data]="data"/>
+<app-card-custom [data]="data" (redirectToShow)="redirectToShowInCard()" />
 <div class="details-container">
   <ng-content select=".actions" class="actions"></ng-content>
   <ng-content select=".details" class="details"></ng-content>

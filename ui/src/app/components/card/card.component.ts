@@ -8,5 +8,16 @@ import CardData from '../../data/card.interface'
 })
 export class CardComponent {
   @Input('data') data: CardData;
+
+  @Input()
+  onRedirect: (id: number) => void;
+
+  hello = "Hello World"
+
+  redirectToShowInCard() {
+    if (this.onRedirect) {
+      this.onRedirect(this.data.id)
+    }
+  }
 }
 

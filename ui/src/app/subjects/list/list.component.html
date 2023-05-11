@@ -1,7 +1,9 @@
-<div class="cards-container">
-  <app-card *ngFor="let d of data" [data]="d">
+<div class="subjects-container">
+  <app-card *ngFor="let subject of data" [data]="subject" [onRedirect]="onRedirectById">
     <div class="actions">
-      <button (click)="onRedirect(d)">GO</button>
+      <button (click)="onRedirect(subject)">Open</button>
+      <button (click)="onRedirect(subject)">Edit</button>
+      <button (click)="onRedirect(subject)">Delete</button>
     </div>
   </app-card>
 </div>

@@ -27,6 +27,10 @@ export class ListComponent implements OnInit {
     this.router.navigate([`subjects/${subject.id}`])
   }
 
+  onRedirectById = (id: number) =>  {
+    this.router.navigate([`subjects/${id}`])
+  }
+
   ngOnDestroy() {
     this.dataSubscription ? this.dataSubscription.unsubscribe() : true;
   }
