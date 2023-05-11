@@ -15,7 +15,6 @@ type AddSubjectEventRequestBody struct {
 func (h handler) AddSubjectEvent(c *gin.Context) {
 	body := AddSubjectEventRequestBody{}
 
-	// getting request body
 	if err := c.BindJSON(&body); err != nil {
 		c.AbortWithError(http.StatusBadRequest, err)
 	}

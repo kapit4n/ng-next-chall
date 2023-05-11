@@ -9,8 +9,15 @@ import (
 
 func (h handler) GetSubjectEvents(c *gin.Context) {
 	var subjectEvents []models.SubjectEvent
+	subjectId := c.Query("subjectId")
 
-	if result := h.DB.Find(&subjectEvents); result.Error != nil {
+	db := h.DB
+
+	if subjectId != "" {
+		db = db.Where("subject_id = ?", subjectId)
+	}
+
+	if result := db.Find(&subjectEvents); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
