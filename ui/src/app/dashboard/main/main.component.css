@@ -1,0 +1,6 @@
+.subject-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1200px;
+}

@@ -20,7 +20,7 @@ export class AppComponent {
   }
   
   onRedirectToDashboard() {
-    this.redirectTo("/dashboard")
+    this.redirectTo("/")
   }
   onRedirectToCategories() {
     this.redirectTo("/categories")

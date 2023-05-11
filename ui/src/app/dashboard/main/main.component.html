@@ -1,0 +1,9 @@
+<div>
+  <h1>Subject Events</h1>
+  <div class="counts">
+    <span>Subject Events</span>
+  </div>
+  <div class="subject-events-list">
+    <app-subject-event *ngFor="let ev of subjectEvents" [data]="ev" />
+  </div>
+</div>
